@@ -1,0 +1,16 @@
+version: '0.1'
+
+services:
+  bot:
+    image: "guardy"
+    build:
+      context: .
+    ports:
+      - 8000:8000
+    restart: always
+    environment:
+        - GUARDY_BOT_API_KEY=${GUARDY_BOT_API_KEY}
+        - GUARDY_URL=${GUARDY_URL}
+        - MONGO_PASSWORD=${MONGO_PASSWORD}
+        - MONGO_USERNAME=${MONGO_USERNAME}
+        - MONGO_HOST=${MONGO_HOST}

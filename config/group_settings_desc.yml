@@ -1,0 +1,8 @@
+settings_descriptions:
+  link_removal: "- <b>No External Links Allowed</b>: To prevent scams and malware, all external links are automatically removed"
+  forwarded_removal: "- <b>Forwarded Messages Prohibited</b>: Forwarded messages, which may contain harmful content, are not allowed"
+  human_verification_image: "- <b>CAPTCHA Verification Required</b>: New members must complete CAPTCHA verification to join"
+  antiflood: "- <b>Anti-flood</b>: Spamming with multiple consecutive messages will trigger anti-flood settings, and you will be muted"
+  human_verification_web: "- <b>WEB Verification Required</b>: New members are required to undergo WEB verification"
+  human_verification_no: "- <b>No Verification Needed</b>: New members are not required to complete any verification"
+  bot_removal: "- <b>Unauthorized Bots Banned</b>: Adding unauthorized bots to the group is prohibited; they will be automatically removed"
