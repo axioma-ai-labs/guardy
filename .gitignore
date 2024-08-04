@@ -129,7 +129,6 @@ dmypy.json
 .pyre/
 
 # Custom
-config/config.yml
 config/models.yml
 
 docker-compose.dev.yml
