@@ -33,10 +33,7 @@ class Config:
 
 class ProductionConfig(Config):
     """Production specific configuration."""
-    MONGO_DB_CONNECTION_STRING = (
-        f"mongodb+srv://{os.getenv('MONGO_USERNAME')}:{os.getenv('MONGO_PASSWORD')}"
-        f"@{os.getenv('MONGO_HOST')}/admin?tls=true&authSource=admin&replicaSet=db-mongo-cryptocortex"
-    )
+    MONGO_DB_CONNECTION_STRING = os.getenv('MONGO_DB_CONNECTION_STRING')
     GUARDY_BOT_API_KEY = os.getenv('GUARDY_BOT_API_KEY')
     GUARDY_URL = os.getenv('GUARDY_URL')
     GUARDY_ID = os.getenv('GUARDY_ID')
@@ -46,10 +43,7 @@ class ProductionConfig(Config):
 
 class TestingConfig(Config):
     """Testing specific configuration."""
-    MONGO_DB_CONNECTION_STRING = (
-        f"mongodb+srv://{os.getenv('MONGO_USERNAME')}:{os.getenv('MONGO_PASSWORD')}"
-        f"@{os.getenv('MONGO_HOST')}/admin?tls=true&authSource=admin&replicaSet=db-mongo-cryptocortex"
-    )
+    MONGO_DB_CONNECTION_STRING = os.getenv('MONGO_DB_CONNECTION_STRING')
     GUARDY_BOT_API_KEY = os.getenv('GUARDY_TEST_BOT_API_KEY')
     GUARDY_URL = os.getenv('GUARDY_DEV_URL')
     GUARDY_ID = os.getenv('GUARDY_DEV_ID')
